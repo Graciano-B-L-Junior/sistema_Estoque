@@ -1,0 +1,282 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header{
+	background: #1a237e;
+	height: 50px;
+	border-bottom: 1px solid #ccc;
+}
+header h4, header h2{
+	display:  inline-block;
+	color: white;
+	vertical-align: middle;
+}
+header h2{
+	margin-left: calc(50% - 230px);
+}
+
+header ul{
+	padding-left: 8%;
+	display: inline-block;
+}
+
+header ul li{
+	vertical-align: middle;
+	padding: 0 15px;
+}
+
+header ul li a{
+	color: white;
+	font-weight: bolder;
+	text-decoration: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+.center{
+	padding: 0 2%;
+}
+
+.info-estoque-completo{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background: #1a237e;
+}
+.info-estoque-completo h2{
+	margin: 15px auto;
+	text-align: center;
+	color: #00e5ff;
+	font-size: 50px;
+}
+
+.info-estoque-completo h3{
+	margin: 15px auto;
+	text-align: center;
+	color: #00e5ff;
+	font-size: 40px;
+}
+.info-estoque-completo h4{
+	margin: 15px auto;
+	text-align: center;
+	color: #00e5ff;
+	font-size: 35px;
+}
+
+.info-estoque-categorias{
+	background: #4527a0;
+}
+
+ul{
+	list-style: none;
+}
+
+.titulo-categoria h2{
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	color: white;
+}
+
+ul li{
+	display: inline-block;
+}
+
+.info-categorias-cabeçalho{
+	margin-top: 15px;
+	position: relative;
+	left: 50%;
+	display: inline-block;
+}
+
+.info-categorias-cabeçalho li{
+	margin: 0 15px;
+	color: white;
+	font-weight: bold;
+}
+
+.info-categoria-gerais{
+	margin-top: 15px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+}
+.info-categoria-gerais ul{
+	display: inline-block;
+}
+.info-categoria-gerais li{
+	color: white;
+	font-weight: bold;
+	margin: 0 15px;
+}
+.categoria-nome{
+	font-size: 36px;
+	color: white;
+	display: inline-block;
+}
+.info-categoria-gerais-lista{
+	position: absolute;
+	left: 51%;
+	padding-top: 20px;
+}
+.info-categorias-gerais{
+	border-bottom: 1px solid #ccc;
+}
+
+.info-categoria-gerais-lista li a{
+	color: white;
+	text-decoration: none;
+}
+
+.info-categoria-button{
+	padding-top: 15px;
+	width: 100%;
+	padding-bottom: 15px;
+
+}
+
+.info-categoria-button .btn{
+	width: 164px;
+	height: 64px;
+	margin: 0 auto;
+	background: #1a237e;
+	cursor: pointer;
+}
+
+.info-categoria-button .btn h2{
+	color: white;
+	text-align: center;
+}
+
+footer{
+	background: #1a237e;
+	height: 50px;
+}
+
+footer p{
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 15px;
+}
+.estoque-info{
+	background: #4527a0;
+}
+.estoque-info h1{
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 5px;
+}
+.categoria-info-cabecalho{
+	padding-top: 15px;
+	width: 90%;
+	margin: 0 auto;
+}
+.categoria-info-wrapper{
+	border-bottom: 1px solid gray;
+}
+.categoria-info-nome{
+	width: 20%;
+	display: inline-block;
+
+}
+.categoria-info-nome h2{
+	color: white;
+	font-size: 36px;
+}
+.categoria-info-nome h4{
+	color: white;
+	font-size: 26px;
+}
+.categoria-info-dados{
+	display: inline-block;
+	padding-left: 50%;
+}
+.categoria-info-dados li{
+	color: white;
+	margin: 0 15px;
+	text-align: center;
+}
+.categoria-info-dados li a{
+	color: white;
+	text-decoration: none;
+}
+.categoria-info-produto{
+	border-bottom: 1px solid #ccc;
+}
+.form-cadastro form{
+	display: block;
+	width: 100%;
+}
+
+.form-cadastro form input{
+	display: block;
+	margin-top: 15px;
+}
+.form-update{
+	height: 100%;
+	background: #4527a0;
+}
+
+.form-update .box-form{
+	margin: 0 auto;
+	position: relative;
+	top:8%;
+	width: 800px;
+	height: 500px;
+	background: white;
+	-webkit-box-shadow: 10px 10px 17px -8px rgba(0,0,0,0.49);
+	-moz-box-shadow: 10px 10px 17px -8px rgba(0,0,0,0.49);
+	box-shadow: 10px 10px 17px -8px rgba(0,0,0,0.49);
+	padding: 40px;
+}
+
+.form-update .box-form h2{
+	text-align: center;
+	color: #4527a0;
+}
+
+.box-form form{
+	margin-top: 15px;
+}
+
+.box-form label{
+	margin-top:10px;
+	font-weight: bolder;
+	margin-left: 25%;
+}
+
+.box-form input{
+	display: block;
+	height: 30px;
+	width: 50%;
+	margin-left: 25%;
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.box-form input[type=submit]{
+	margin-top: 15px;
+	margin-left: 25%;
+}
+
+.box-form select{
+	width: 50%;
+	height: 30px;
+	display: block;
+	margin-left: 25%;	
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+.box-form select option{
+	font-weight: bold;
+}
+
+
