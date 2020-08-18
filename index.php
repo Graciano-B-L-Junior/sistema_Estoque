@@ -14,11 +14,11 @@
 	<header>
 		<div class="center">
 		<h4>GB Sistemas</h4>
-		<h2>BEM-VINDA GLAEDA!</h2>
+		<h2>BEM-VINDA GR VARIEDADES!</h2>
 		<ul>
 			<li><a href="<?php echo INCLUDE_PATH?>Home">Inicio</a></li>
 			<li><a href="<?php echo INCLUDE_PATH?>Estoquecompleto">Estoque</a></li>
-			<li><a href="<?php echo INCLUDE_PATH?>Cadastrarproduto">Adicionar/Retirar Produtos</a></li>
+			<li><a href="<?php echo INCLUDE_PATH?>Cadastrarproduto">Adicionar Produtos</a></li>
 		</ul>
 	</div>
 	</header>

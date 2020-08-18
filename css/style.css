@@ -26,7 +26,7 @@ header ul{
 
 header ul li{
 	vertical-align: middle;
-	padding: 0 15px;
+	padding: 0 8px;
 }
 
 header ul li a{
@@ -199,8 +199,7 @@ footer p{
 }
 .categoria-info-dados li{
 	color: white;
-	margin: 0 15px;
-	text-align: center;
+	margin: 0 10px;
 }
 .categoria-info-dados li a{
 	color: white;
@@ -228,7 +227,7 @@ footer p{
 	position: relative;
 	top:8%;
 	width: 800px;
-	height: 500px;
+	height: 550px;
 	background: white;
 	-webkit-box-shadow: 10px 10px 17px -8px rgba(0,0,0,0.49);
 	-moz-box-shadow: 10px 10px 17px -8px rgba(0,0,0,0.49);
@@ -262,6 +261,11 @@ footer p{
 }
 
 .box-form input[type=submit]{
+	margin-top: 15px;
+	margin-left: 25%;
+}
+
+.box-form input[type=file]{
 	margin-top: 15px;
 	margin-left: 25%;
 }

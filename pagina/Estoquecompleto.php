@@ -3,6 +3,16 @@
 	$sql = $sql->prepare("SELECT * FROM `produto`");
 	$sql->execute();
 	$info = $sql->fetchAll();
+	if(isset($_GET['excluir'])){
+		$id = $_GET['excluir'];
+		$sql2 = ConexaoBD::conexao();
+		$sql2 = $sql2->prepare("SELECT * FROM `produto` WHERE `id` = $id");
+		$sql2->execute();
+		$info2 = $sql2->fetch();
+		Produto::deletarProduto($info2['id'],$info2['imagem']);
+		header('Location: '.INCLUDE_PATH.'Estoquecompleto');
+		die();
+	}
 ?>
 <div class="estoque-info">
 	<div class="center">
@@ -20,7 +30,6 @@
 						<li>Qtd</li>
 						<li>R$(Custo)</li>
 						<li>R$(Venda)</li>
-						<li>Editar</li>
 					</ul>
 			</div>
 		</div>
@@ -32,6 +41,9 @@
 		<div class="categoria-info-produto">
 			<div class="categoria-info-nome">
 			<h4><?php echo $nome['nome'];?></h4>
+			<?php if($nome['imagem'] !=null) { ?>
+			<img src="images/<?php echo $nome['imagem']?>" style="width: 70px;height: 70px;">
+			<?php }?>
 			</div>
 			<div class="categoria-info-dados">
 			<ul>
@@ -39,6 +51,7 @@
 				<li>R$<?php echo $nome['preco_custo']; ?></li>
 				<li>R$<?php echo $nome['preco_venda']; ?></li>
 				<li><a href="<?php echo INCLUDE_PATH; ?>EditarProduto?id=<?php echo $nome['id'];?>">Editar</a></li>
+				<li><a href="<?php echo INCLUDE_PATH; ?>Estoquecompleto?excluir=<?php echo $nome['id']; ?>" style="font-weight: bolder">Excluir</a></li>
 			</ul>
 			</div>
 		</div>
